@@ -1,0 +1,21 @@
+Hello, John
+Hello, Gary
+Hello, Gary you are a dope
+Hello, http://linuxcommand.org/learning_the_shell.php
+Fri, 10 Oct 2014 15:41:02 +0100 #!/bin/bash
+Fri, 10 Oct 2014 15:41:02 +0100 #: Title : 
+Fri, 10 Oct 2014 15:41:02 +0100 #: Date : 
+Fri, 10 Oct 2014 15:41:02 +0100 #: Author : 
+Fri, 10 Oct 2014 15:41:02 +0100 #: Version :
+Fri, 10 Oct 2014 15:41:02 +0100 #: Description : 
+Fri, 10 Oct 2014 15:41:02 +0100 #: Options :
+Fri, 10 Oct 2014 15:41:02 +0100 
+Fri, 10 Oct 2014 15:41:02 +0100 # to run the file use: ./fileName.sh
+Fri, 10 Oct 2014 15:41:02 +0100 
+Fri, 10 Oct 2014 15:41:02 +0100 #: Description: print Hello and the first command-line argument
+Fri, 10 Oct 2014 15:41:02 +0100 #printf "Hello, %s%s%s!\n" "$1" " you were born in $2" " and you favorite color is $3"
+Fri, 10 Oct 2014 15:41:02 +0100 read var1
+Fri, 10 Oct 2014 15:41:02 +0100 
+Fri, 10 Oct 2014 15:41:02 +0100 printf "Hello, %s\n" "$var1"
+Fri, 10 Oct 2014 15:41:02 +0100 
+Fri, 10 Oct 2014 15:41:02 +0100 cat diary.sh | sed -e "s/^/$(date -R) /" >> diaryInput.txt

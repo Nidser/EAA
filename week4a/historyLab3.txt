@@ -1,0 +1,443 @@
+    1  ls -ltr
+    2  sudo gedit /etc/cntlm.conf 
+    3  bg
+    4  cd
+    5  find . -name *.crt -print 2>/dev/null
+    6  cd Downloads/
+    7  ls
+    8  vi eduroam-linux-IoTT_Linux.sh 
+    9  cd
+   10  sudo gedit /etc/cntlm.conf 
+   11  sudo gedit /etc/cntlm.conf 
+   12  bg
+   13  cntlm -M
+   14  cntlm -H
+   15  cntlm -H
+   16  cntlm -H
+   17  cntlm -H
+   18  sudo service cntlm restart
+   19  cntlm -H
+   20  cntlm -H cntlm.conf
+   21  cntlm cntlm.conf -H
+   22  cntlm -H
+   23  cntlm -H www.sun.com
+   24  cntlm -H
+   25  cntlm -H
+   26  ls /etc
+   27  sudo mv /etc/cntlm.conf /etc/cntlm.conf.old
+   28  cntlm -H
+   29  ls
+   30  sudo apt-get remove cntlm
+   31  sudo apt-get install cntlm
+   32  sudo apt-get remove cntlm
+   33  sudo apt-get install cntlm
+   34  sudo service start cntlm
+   35  sudo apt-get install cntlm
+   36  sudo service start 
+   37  sudo service cntlm start
+   38  sudo service cntlm start -v
+   39  sudo apt-get remove cntlm
+   40  sudo apt-get install cntlm
+   41  sudo apt-get remove cntlm
+   42  sudo apt-get install cntlm
+   43  sudo apt-get remove cntlm
+   44  find / -name cntlm.conf -print
+   45  find / -name cntlm.conf -print 2>/dev/nul
+   46  find / -name cntlm.conf -print 2>/dev/null
+   47  sudo apt-get remove cntlm
+   48  sudo apt-get install cntlm
+   49  sudo apt-get install cntlm
+   50  ls /etc/cntlm.conf
+   51  sudo apt-get purge cntlm
+   52  sudo apt-get install cntlm
+   53  find / -name cntlm.conf -print 2>/dev/null
+   54  cntlm -H
+   55  sudo vi /etc/cntlm.conf
+   56  cntlm -H
+   57  fg
+   58  sudo service cntlm restart
+   59  vi eduroam-linux-IoTT_Linux.sh 
+   60  sudo vi /etc/cntlm.conf
+   61  cntlm -M
+   62  cntlm -H -c /etc/cntlm.conf
+   63  cntlm -c /etc/cntlm.conf -H
+   64  cntlm -H
+   65  cntlm -c /etc/cntlm.conf -H
+   66  cntlm -c /etc/cntlm.conf 
+   67  cntlm -H -u jburns@stf
+   68  sudo vi /etc/cntlm.conf
+   69  sudo service cntlm restart
+   70  sudo vi /etc/cntlm.conf
+   71  sudo service cntlm restart
+   72  sudo service cntlm restart
+   73  sudo service cntlm restart
+   74  ls -ltr
+   75  rm *.cer
+   76  ls
+   77  chef
+   78  ls /opt
+   79  /opt/chef/bin/chef-solo
+   80  sudo shutdown -r now
+   81  ls -ltr
+   82  vi .profile 
+   83  export GIT_SSL_NO_VERIFY=1
+   84  export http_proxy=http://localhost:3128
+   85  sudo -E apt-get install git
+   86  git config --global user.email "<your email>"
+   87  git config --global user.email "johndiezdaly"gmail.com"
+   88  export GIT_SSL_NO_VERIFY=1
+   89  export http_proxy=http://localhost:3128
+   90  sudo -E apt-get install git
+   91  git config --global user.email "johndiezdaly@gmail.com"
+   92  git config --global user.name "nidser"
+   93  mkdir EAA
+   94  cd EAA
+   95  touch README.md
+   96  ls-l
+   97  ls -l
+   98  touch README.md
+   99  ls -l
+  100  ls
+  101  git init
+  102  git add -A
+  103  git commit -a
+  104  ls
+  105  touch script.sh
+  106  cd..
+  107  cd ..
+  108  git add -A
+  109  git add -A
+  110  cd EAA
+  111  touch script.sh
+  112  ls
+  113  cd ..
+  114  git add -A
+  115  cd EAA
+  116  mkdir week2
+  117  cd week2
+  118  touch script.sh
+  119  cd ..
+  120  touch README.md
+  121  git init
+  122  git add -A
+  123  git commit -a
+  124  git remote add origin https://github.com/Nidser/EAA.git
+  125  git push -u origin master
+  126  cd ..
+  127  rm EAA
+  128  cd EAA
+  129  ls
+  130  rm README.md
+  131  rm script.sh
+  132  rm week2
+  133  cd week2
+  134  ls
+  135  rm script.sh
+  136  cd  ..
+  137  rm week2
+  138  rm-r week2
+  139  rm -r week2
+  140  ls
+  141  cd ..
+  142  cd EAA
+  143  cd ..
+  144  rm EAA
+  145  rm -r EAA
+  146  n
+  147  cd EAA
+  148  mkdir lab2a
+  149  cd lab2a
+  150  mkdir week2
+  151  cd week2
+  152  touch script.sh
+  153  cd ..
+  154  touch README.md
+  155  git init
+  156  git add -A
+  157  git commit -a
+  158  git remote add origin https://github.com/Nidser/EAA.lab2a.git
+  159  git push -u origin master
+  160  ls
+  161  git remote add origin https://github.com/Nidser/EAA.lab2a.git
+  162  grep processor /proc/cpuinfo | wc -l
+  163  grdit cpucount.sh
+  164  gedit cpucount.sh
+  165  gedit cpucount.sh
+  166  ls
+  167  cat cpucount.sh
+  168  cd ..
+  169  cd ..
+  170  cd EAA
+  171  gedit
+  172  ls
+  173  cd lab2a
+  174  ls
+  175  chmod +x cpucount.sh
+  176  gedit cpucount.sh
+  177  cd ..
+  178  touch README.md
+  179  git init
+  180  git add README.md
+  181  git commit -m "first commit"
+  182  git remote add origin https://github.com/Nidser/EAA.git
+  183  git push -u origin master
+  184  history > history260914.txt
+  185  ls
+  186  git commit -a
+  187  git add -A
+  188  git commit -a
+  189  git push origin master
+  190  cat history.txt
+  191  l
+  192  ls
+  193  cat history260914.txt
+  194  sudo shutdown now
+  195  gedit
+  196  gedit errorMessage
+  197  ls
+  198  chmod errorMessage
+  199  chmod octal errorMessage
+  200  chmod --help
+  201  chmod octal 4 errorMessage
+  202  chmod 4 errorMessage
+  203  chmod 2 errorMessage
+  204  ls -l
+  205  chmod errorMrssage r
+  206  chmod errorMrssage --help
+  207  chmod r errorMesage
+  208  chmod u+x errorMessage
+  209  ls -l
+  210  chmod u+r errorMessage
+  211  chmod u+w errorMessage
+  212  ls -l
+  213  ls -l /home/mint/.gnome2/gedit/gedit-2.JJ02MX
+  214  cd home
+  215  cd mint
+  216  ls -l /home/mint/
+  217  ls -l /home/mint/.gnome2/gedit/gedit-2.JJ02MX/
+  218  ls -l /home/mint/.gnome2/gedit/gedit-2
+  219  chmod u+x gedit-2
+  220  cd /home/mint/.gnome2/gedit/
+  221  ls -l
+  222  cd /home/mint/.gnome2/
+  223  ls -l
+  224  chown mint gedit
+  225  chown -R mint gedit
+  226  chown -R root mint gedit
+  227  chown -R mint /home/mint/.gnome2/gedit/ 
+  228  ls -l
+  229  sudo chown -R mint /home/mint/.gnome2/gedit/ 
+  230  ls -l
+  231  sudo chgrp -R mint /home/mint/.gnome2/gedit/ 
+  232  ls -l
+  233  history history03/10/2014
+  234  history history 03oct14
+  235  history history03oct14
+  236  history history03oct14.txt
+  237  history > history03oct14.txt
+  238  cls
+  239  cl
+  240  export GIT_SSL_NO_VERIFY=1
+  241  export http_proxy=http://localhost:3128
+  242  sudo -E apt-get install git
+  243  git config --global user.email "johndiezdaly@gmail.com"
+  244  git config --global user.name "nidser"
+  245  git clone https://github.com/Nidser/Demo.git
+  246  ls
+  247  cd Demo
+  248  mkdir week3
+  249  cd week3
+  250  touch pushTest.sh
+  251  cd ..
+  252  ls
+  253  ls week3/
+  254  git add -A
+  255  dit commit -a
+  256  git commit -a
+  257  git push origin master
+  258  history > howToPushFilesToGitHub.txt
+  259  ls
+  260  git add -A
+  261  git commit -a
+  262  git push origin master
+  263  gedit newFile
+  264  ls
+  265  git add -A
+  266  git commit -a
+  267  git push origin master
+  268  ls
+  269  gedit newFile2
+  270  git add -A
+  271  git commit -a
+  272  git push origin master
+  273  ls
+  274  cat newFile.txt
+  275  cat newFile.sh
+  276  cat --help
+  277  ls
+  278  cat newFile
+  279  cat newFile2
+  280  cat howToPushFilesToGitHub.txt
+  281  ls
+  282  gedit script.sh
+  283  cd week3
+  284  ls
+  285  gedit script.sh
+  286  cd
+  287  cd Demo
+  288  ls -l
+  289  cd week3
+  290  ls
+  291  ls -l
+  292  chmod +x script.sh
+  293  cd ..
+  294  cd week3
+  295  ./script.sh
+  296  git commit script.sh
+  297  ls
+  298  cd ..
+  299  git add -A
+  300  git commit -a
+  301  git push origin master
+  302  cd week3
+  303  gedit script.sh
+  304  cat script.sh
+  305  ./script.sh
+  306  ./script.sh
+  307  ./script.sh
+  308  cat script.sh
+  309  history >history03Oct14B
+  310  git commit script.sh
+  311  cat script.sh
+  312  ./script.sh
+  313  git add -A
+  314  git commit -a
+  315  git add -A
+  316  git commit -a
+  317  git push origin master
+  318  history > history 03/10/2014C
+  319  history > history 03Oct14C
+  320  history > history 03Oct14C.txt
+  321  history > history03Oct14C.txt
+  322  git add -A
+  323  git commit -a
+  324  git push origin master
+  325  ls
+  326  cd eaa
+  327  cd EAA
+  328  ls
+  329  mkdir week4
+  330  cd week4
+  331  export GIT_SSL_NO_VERIFY=1
+  332  export http_proxy=http://localhost:3128
+  333  cd ..
+  334  git add -A
+  335  git commit -a
+  336  git push origin master
+  337  export GIT_SSL_NO_VERIFY=1
+  338  export http_proxy=http://localhost:3128
+  339  ls
+  340  cd EAA
+  341  ls
+  342  git add -A
+  343  git commit -a
+  344  ls
+  345  week4A
+  346  mkdir week4a
+  347  cd week4a
+  348  gedit test.txt
+  349  ls
+  350  cd ..
+  351  ls
+  352  git add -A
+  353  git commit -a
+  354  git push origin master
+  355  cd week4a
+  356  gedit githubExportCommand.sh
+  357  gedit test.txt
+  358  ls -l
+  359  cd ..
+  360  ls -l
+  361  gedit linux_cmds.txt
+  362  cd week 4
+  363  cd week4
+  364  ls
+  365  gedit hw.sh
+  366  ./hw.sh
+  367  chmod +x hw.sh
+  368  ./hw.sh
+  369  $1 This is a cooment
+  370  $1
+  371  comment
+  372  ./hw.sh
+  373  cd ..
+  374  cd week4a
+  375  ./hw.sh John
+  376  ls
+  377  mv test.txt
+  378  mv test.txt test.sh
+  379  git commit test.sh
+  380  git commit
+  381  git add -A
+  382  cd ..
+  383  git add -A
+  384  git commit -a
+  385  git push origin master
+  386  ls
+  387  cd week4a
+  388  ls
+  389  cd ..
+  390  cd week4
+  391  ls
+  392  cp .hw.sh /home/mint/EAA/week4a/
+  393  cp /.hw.sh /home/mint/EAA/week4a/
+  394  cp -p hw.sh /home/mint/EAA/week4a/hw.sh
+  395  cd ..
+  396  cd week4a
+  397  ls
+  398  ./hw.sh John
+  399  gedit data.sh
+  400  gedit hw.sh
+  401  /.data.sh John Spain Blue
+  402  ls
+  403  ./data.sh John Spain Blue
+  404  chmod +x data.sh
+  405  ./data.sh John Spain Blue
+  406  ./data.sh John Spain Blue
+  407  ./data.sh John Spain Blue
+  408  gedit data.sh
+  409  ./data.sh John Spain Blue
+  410  ./data.sh John Spain Blue
+  411  ./data.sh John Spain Blue
+  412  cd ..
+  413  git push -A
+  414  git add -A
+  415  git commit -a
+  416  git push origin master
+  417  ./data.sh John Spain Blue
+  418  cd week4a
+  419  ./data.sh John Spain Blue
+  420  gedit diary.sh
+  421  ./diary.sh
+  422  chmod +x diary.sh
+  423  ./diary.sh
+  424  ./diary.sh >> diary.sh seciond add
+  425  ./diary.sh
+  426  ./data.sh John Spain Blue
+  427  ./diary.sh >> diaryInput.txt John
+  428  ls
+  429  cat diaryInput.txt
+  430  ./diary.sh >> diaryInput.txt
+  431  cat diaryInput.txt
+  432  ./diary.sh >> diaryInput.txt
+  433  cat diaryInput.txt
+  434  ./diary.sh >> diaryInput.txt
+  435  cat diaryInput.txt
+  436  ./diary.sh
+  437  ./diary.sh 
+  438  ./diary.sh 
+  439  cat diaryInput.txt
+  440  ./diary.sh 
+  441  ./diary.sh 
+  442  cat diaryInput.txt
+  443  history >historyLab3.txt
