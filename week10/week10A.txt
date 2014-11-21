@@ -1,0 +1,109 @@
+//mpstat & iostat used in a cron will collect system stats
+
+
+navigate to the chef folder
+-> cd
+-> cd .chef/
+
+Objective 
+->1 Create a new cookbook using knife
+->2. Specify the recipies in cookbook
+->3. Create &  execute a recipe run list for the node
+
+
+//Command to create a new cookbook 
+
+gedit knife.rb
+
+cookbook_path ["/home/mint/EAA/Week10/cookbooks"]
+
+**************************************************************************
+ //Specify the recipies in cookbook
+pwd: 
+
+~/EAA/Week10/cookbooks/mpstat/recipes $ 
+
+//make new recipe
+
+gedit default.rb
+
+************************ default.rb file info  *****************************
+
+#
+# Cookbook Name:: mpstat
+# Recipe:: default
+#
+# Copyright 2014, YOUR_COMPANY_NAME
+#
+# All rights reserved - Do Not Redistribute
+#
+
+#this is the default for this cookbook
+
+#add a package resource & install this resource
+
+package "sysstat" do
+  action :install
+end
+
+#add a user to the account
+
+user 'sysmon' do
+	action :create
+	comment "EAA REquired User Account"
+	home "/home/sysmon"
+	shell "/bin/bash"
+	supports :manage_home =>true
+end
+
+#add a file to the user home directory
+
+file '/home/sysmon/config.dat' do
+	action :create
+	content 'apt_package "sysstat" do
+  		action :install
+		end
+
+		user sysman do
+		action :create
+		comment "EAA REquired User Account"
+		home "/home/eaa/Week10"
+		shell "/bin/bash"
+		supports :manage_home =>true
+		end'
+end
+
+********************************** default.rb end ************************
+
+//create a json node
+
+gedit node.json
+
+//contents
+{
+"run_list": [ "recipe[mpstat]" ]
+}
+
+//***************************************************************************
+
+Create a solo.rd file 
+gedit solo.rb
+
+//contents
+cookbook_path ["/home/mint/EAA/Week10/cookbooks"]
+json_attribs "/home/mint/EAA/Week10/cookbooks/node.json"
+
+*******************************************************
+
+RUn the file
+
+sudo -E chef-solo -c ./solo.rb
+
+
+
+
+
+
+
+
+

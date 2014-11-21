@@ -1,0 +1,167 @@
+EAA - Requirements
+
+Amazon Web Services
+
+
+Sign in through moodle:
+user id: 789209810115
+
+Account id: eaa005
+pass: eaa005
+
+Select N.California as the storage place
+
+AMI - Amazon Machine Instance = OS + Software stack e.g  Win 2008 + SQL Server
+-----------------------------------------------------------------------------------------------------
+
+SETUP:
+
+EC2 -> Launch Instance -> Choose AMI
+
+(AWS in the market place - companies make their own AMI reference and then support it)
+
+(We choose Community AMIs)
+
+OS + Stack -> Network -> Spec -> Storage -> Security -> Check out
+
+Select Ubuntu AMI - > check low instance -> Select Bottom right -> Select network dropdown to 1st -> select Subnet to 1st - > 
+30gb is GB size -> five it a name -> select from existing group (sg-bee62ebd) - >Launch
+
+
+Choose the key pair -> US West-EAA -> Finished.....
+-----------------------------------------------------------------------------------------------------
+CONFIGURATION:
+
+
+To Configure Security Groups:
+Edit inbound rules - > Configure as required .....
+Edit Outbound rules - > configure as required.....
+
+To configure Elastic IPs: (Vertical Scaling)
+Click Elastic Ips -> This will allow you to scale Vertically  - to redirect the IP from one machine to another.
+-----------------------------------------------------------------------------------------------------
+
+Pem File is used to SSH to machine in question.
+in linux cmd line - $ssh -i US-West_EAA.pem ubuntu@54.67.46.211(select the ip address from instance)
+CHmod 400
+	----------------------------------------------------------------
+
+in windows:
+import file to putty gen   file name(US-West_EAA.pem)  - converts it to PPK
+-----------------------------------------------------------------------------------------------------
+
+Configuration management:
+
+	Suppose each instance needs 
+	(i) eaa user (+Home directory)
+	(ii)apache2 webserver
+	(iii)sysstat monitoring package
+	(iv) specific xml config file
+
+Infrastructure as code:
+"Code" is:
+	1. Testable
+	2. Shareable
+	3. Reproducible
+	4. Modifiable
+	
+-----------------------------------------------------------------------------------------------------
+
+Chef - Application that facilitates instance config. which is platform independent
+
+-----------------------------------------------------------------------------------------------------
+
+
+In Mint
+
+1) if required -> git clone (GIT SSHh clone link)
+
+2) mkdir week9
+
+3) cd week9
+
+4) create a gedit script as follows:
+
+user 'eaa' do
+	action :create
+	comment "EAA REquired User Account"
+	home "/home/eaa"
+	shell "/bin/bash"
+	supports :manage_home =>true
+end
+save as add.eaa.rb
+
+
+To run: 
+sudo chef-apply add.eaa.rb
+
+to change into eaa user mode us  - > sudo su - eaa
+then -> pwd
+
+-----------------------------------------------------------------------------------------------------
+to add a file attached to that user:
+
+gedit add.webserver.rb
+
+user 'webserver' do
+	action :create
+	comment "EAA REquired User Account"
+	home "/home/webserver"
+	shell "/bin/bash"
+	supports :manage_home =>true
+end
+
+file ' /home/webserver/user_readme' do
+	action :create
+	content 'Welcome please rememer to log out when finished'
+end
+
+file ' /home/webserver/config.xml' do
+	action :create
+	content 'This is an xml file'
+end
+
+
+//to remove the file
+file ' /home/webserver/config.xml' do
+	action :delete
+end
+
+
+//save as add.webserver.rb
+
+to change into eaa user mode us  - > sudo su - webserver
+
+to run the file :  config.xml
+
+-----------------------------------------------------------------------------------------------------
+
+Add to git hub
+git push -u origin master
+
+-----------------------------------------------------------------------------------------------------
+Chef - week10
+-----------------------------------------------------------------------------------------------------
+e.g 
+Recipe number 1 - install and config apache
+Recipe number 2 - set up your accounts
+Recipe number 3 - directory set up
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
